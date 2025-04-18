@@ -16,6 +16,9 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.UUID;
 
+import static com.shubham.Expense.Tracker.Utils.ValidationUtils.isValidEmail;
+import static com.shubham.Expense.Tracker.Utils.ValidationUtils.isValidPassword;
+
 @Component
 @AllArgsConstructor
 @Data
@@ -44,7 +47,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
     public Boolean signupUser(UserInfoDto userInfoDto){
         // validation utils to validate email and password
-
+        if(!isValidEmail(userInfoDto.getUsername()) || !isValidPassword(userInfoDto.getPassword()))return false;
 
         userInfoDto.setPassword(passwordEncoder.encode(userInfoDto.getPassword()));
         if(Objects.nonNull(checkIfUserAlreadyExists(userInfoDto))){
