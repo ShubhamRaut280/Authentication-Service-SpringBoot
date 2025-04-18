@@ -1,4 +1,4 @@
-package com.shubham.Expense.Tracker.entities;
+package com.shubham.Expense.Tracker.models.entities;
 
 import com.fasterxml.jackson.databind.PropertyNamingStrategy;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
