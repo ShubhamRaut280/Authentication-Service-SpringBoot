@@ -1,13 +1,14 @@
 package com.shubham.Expense.Tracker.services;
 
-import com.shubham.Expense.Tracker.models.entities.RefreshToken;
-import com.shubham.Expense.Tracker.models.entities.UserInfo;
+import com.shubham.Expense.Tracker.entities.RefreshToken;
+import com.shubham.Expense.Tracker.entities.UserInfo;
 import com.shubham.Expense.Tracker.repository.RefreshTokenRepository;
 import com.shubham.Expense.Tracker.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.Instant;
+import java.util.Optional;
 import java.util.UUID;
 
 @Service
@@ -38,5 +39,9 @@ public class RefreshTokenService {
         }
 
         return token;
+    }
+
+    public Optional<RefreshToken> findByToken (String token){
+        return refreshTokenRepository.findByToken(token);
     }
 }

@@ -1,6 +1,6 @@
 package com.shubham.Expense.Tracker.repository;
 
-import com.shubham.Expense.Tracker.models.entities.UserInfo;
+import com.shubham.Expense.Tracker.entities.UserInfo;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,4 +1,4 @@
-package com.shubham.Expense.Tracker.models.entities;
+package com.shubham.Expense.Tracker.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -19,7 +19,7 @@ public class UserInfo {
 
     @Id
     @Column(name = "user_id")
-    private Long userId;
+    private String userId;
     private String username;
     private String password;
 

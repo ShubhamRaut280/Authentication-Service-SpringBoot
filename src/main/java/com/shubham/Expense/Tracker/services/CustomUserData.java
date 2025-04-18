@@ -1,7 +1,7 @@
-package com.shubham.Expense.Tracker.models;
+package com.shubham.Expense.Tracker.services;
 
-import com.shubham.Expense.Tracker.models.entities.UserInfo;
-import com.shubham.Expense.Tracker.models.entities.UserRoles;
+import com.shubham.Expense.Tracker.entities.UserInfo;
+import com.shubham.Expense.Tracker.entities.UserRoles;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -9,7 +9,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-import java.util.Set;
 
 public class CustomUserData extends UserInfo implements UserDetails {
     private String username;

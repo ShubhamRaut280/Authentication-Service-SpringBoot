@@ -1,4 +1,4 @@
-package com.shubham.Expense.Tracker.models.entities;
+package com.shubham.Expense.Tracker.entities;
 
 
 import jakarta.persistence.*;
