@@ -28,12 +28,12 @@ public class CustomUserData extends UserInfo implements UserDetails {
 
     @Override
     public String getPassword() {
-        return super.getPassword();
+        return password;
     }
 
     @Override
     public String getUsername() {
-        return super.getUsername();
+        return username;
     }
 
     @Override
