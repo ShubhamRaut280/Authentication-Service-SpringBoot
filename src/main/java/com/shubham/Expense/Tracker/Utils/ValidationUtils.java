@@ -18,4 +18,6 @@ public class ValidationUtils {
     public static boolean isValidPassword(String password) {
         return password != null && PASSWORD_PATTERN.matcher(password).matches();
     }
+
+
 }

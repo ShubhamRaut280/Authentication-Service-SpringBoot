@@ -14,7 +14,7 @@ import java.util.Set;
 @AllArgsConstructor
 @Data
 @ToString
-@Table
+@Table(name = "users")
 public class UserInfo {
 
     @Id
